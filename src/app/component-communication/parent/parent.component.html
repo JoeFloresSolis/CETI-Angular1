@@ -1,0 +1,11 @@
+<div class="container">
+    <h2>Parent</h2>
+    <h3>Parent Number: {{parentNumber}}</h3>
+    <h3>Children Number (from Children): {{childrenNumber}}</h3>
+    <button (click)="sentToChildren()">Enviar al Hijo</button>
+    
+    
+    <hr>
+    <app-children [parentNumber]="parentNumber" (childrenNumberEvent)="recieveFromChildren($event)"></app-children>
+    <hr>
+</div>

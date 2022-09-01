@@ -1,0 +1,7 @@
+<h2 class="container">Lista personajes de Amigos</h2>
+
+<div class="container">
+    <section *ngFor="let item of friends | sorteAge">
+        <p>Name: {{item.name}} / Age: {{item.age}}</p>
+    </section>
+</div>
